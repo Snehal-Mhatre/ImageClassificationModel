@@ -1,4 +1,4 @@
-# Deploy Keras Model with Flask as Web App in 10 Minutes
+# Deploy Image Classification Model using Flask and Docker on Google Cloud
 
 A pretty and customizable web app to deploy your DL model with ease
 
