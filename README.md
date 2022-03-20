@@ -123,31 +123,9 @@ You can also use gunicorn instead of gevent
 $ gunicorn -b 127.0.0.1:5000 app:app
 ```
 
-More deployment options, check [here](https://flask.palletsprojects.com/en/1.1.x/deploying/wsgi-standalone/)
 
-### Set up Nginx
-
-To redirect the traffic to your local app.
-Configure your Nginx `.conf` file.
-
-```
-server {
-  listen  80;
-
-  client_max_body_size 20M;
-
-  location / {
-      proxy_pass http://127.0.0.1:5000;
-  }
-}
 ```
 
 </details>
 
-## Future Plan
 
-- [ ] Support detection and segmentation models
-
-## More Resources
-
-[Building a simple Keras + deep learning REST API](https://blog.keras.io/building-a-simple-keras-deep-learning-rest-api.html)
